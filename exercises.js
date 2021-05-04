@@ -10,7 +10,7 @@ function max(num1,num2) {
     return num1;
   }
   else {
-    return num2
+    return num2;
   }
 }
 
@@ -19,7 +19,22 @@ console.log(max(2,4));
   // Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.
   // ---------------------
 
+function maxOfThree(num1, num2, num3) {
+  if (num1>num2, num1>num3) {
+    return num1;
+  }
+  else
+    if (num2>num1, num2>num3) {
+      return num2;
+  }
+  else
+    if (num3>num1, num3>num2) {
+      return num3;
+    }
 
+}
+
+console.log(maxOfThree(1,2,3));
 
   // ---------------------
   // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
@@ -68,9 +83,9 @@ console.log(max(2,4));
 
   console.assert(max(2, 4) === 4, 'function max error');
 
-  console.assert(maxOfThree(1, 2, 3) === 3, 'ERROR funtion maxOfThree');
+  console.assert(maxOfThree(1, 2, 3) === 3, 'ERROR function maxOfThree');
 
-  console.assert(maxOfThree(2, 3, 1) === 3, 'ERROR funtion maxOfThree');
+  console.assert(maxOfThree(2, 3, 1) === 3, 'ERROR function maxOfThree');
 
   console.assert(maxOfThree(3, 2, 1) === 3, 'ERROR maxOfThree');
 
