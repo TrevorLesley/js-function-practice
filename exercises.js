@@ -20,27 +20,28 @@ console.log(max(2,4));
   // ---------------------
 
 function maxOfThree(num1, num2, num3) {
-  if (num1>num2, num1>num3) {
+  if (num1>num2 && num1>num3) {
     return num1;
   }
   else
-    if (num2>num1, num2>num3) {
+    if (num2>num1 && num2>num3) {
       return num2;
   }
   else
-    if (num3>num1, num3>num2) {
+    if (num3>num1 && num3>num2) {
       return num3;
     }
 
 }
 
-console.log(maxOfThree(1,2,3));
+console.log(maxOfThree(3,2,1));
 
   // ---------------------
   // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
   // ---------------------
-
-
+function isVowel(letter) {
+  var char = "";
+  switch()
 
   // ---------------------
   // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
