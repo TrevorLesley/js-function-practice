@@ -39,19 +39,38 @@ console.log(maxOfThree(3,2,1));
   // ---------------------
   // Define a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.
   // ---------------------
-function isVowel(letter) {
-  var char = "";
-  switch()
-
+  function isVowel(str) {
+    var vowel = ["a", "e", "i", "o", "u"];
+    if (str = vowel.includes(str)) {
+      return true
+    } else {
+      return false;
+    }
+  }
+  isVowel("a");
   // ---------------------
   // Write a function rovarspraket() that will translate a text into "rövarspråket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
   // ---------------------
 
+  function rovarspraket(text) {
+  let translation = '';
 
+  text.toLowerCase().split('').forEach(function(char){
+    if('bcdfghjklmnpqrstvwxyz'.includes(char)) {
+      translation += char + 'o' + char;
+    } else {
+      translation += char;
+      // translation = translation + char;
+    }
+  });
 
+  return translation;
+  }
+rovarspraket("this is fun");
   // ---------------------
   // Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.
   // ---------------------
+
 
 
 
