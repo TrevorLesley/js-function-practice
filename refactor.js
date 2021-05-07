@@ -86,7 +86,9 @@
   console.log("The letter is", letter);
 
   // Put your answer below -------------------------
-
+  //  [c]
+  // The function has the setTimeout property, which delays its log until
+  // after z.
 
   // -----------------------------------------------
 
