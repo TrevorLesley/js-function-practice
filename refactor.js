@@ -149,7 +149,24 @@
 
   // Put your answer below -------------------------
 
+  let colorName = 'rojo';
 
+  switch (colorName) {
+    case 'rojo':
+      console.log('#ff0000');
+      break;
+    case 'blanco':
+      console.log('#ffffff');
+      break;
+    case 'azul':
+      console.log('#0000ff');
+      break;
+    case 'verde':
+      console.log('#00ff00');
+      break;
+    case 'negro':
+      console.log('#000000');
+  }
 
   // -----------------------------------------------
 
