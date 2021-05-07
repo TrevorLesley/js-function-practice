@@ -278,6 +278,13 @@
     console.log(numberA + numberB);
   };
 
+  // Adding extra function for return output instead of console log.
+
+  // function addNumbers(numberA, numberB) {
+  //   var product = numberA + numberB;
+  //   return product;
+  // }
+
   addNumbers(2, 2);
 
   // -----------------------------------------------
