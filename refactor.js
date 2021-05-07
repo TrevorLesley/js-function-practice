@@ -313,6 +313,16 @@
   // Put your answer below -------------------------
   // 
 
+  var speed = 0;
+
+  var accelerate = function (amount) {
+    if (!amount) {
+      return 1;
+    } else {
+      return speed += amount;
+    }
+  };
+  accelerate();
 
   // -----------------------------------------------
 
