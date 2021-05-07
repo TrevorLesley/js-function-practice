@@ -115,7 +115,7 @@
   var reverseStr = function (str) {
     var arr = str.split('').reverse().join('');
   }
-
+  reverseStr('hola');
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -185,7 +185,7 @@
   // Put your answer below -------------------------
 
   var foo;
-  foo = "var";
+  foo = "bar";
   // -----------------------------------------------
 
   //////////////////////////////////////////////////
@@ -209,23 +209,29 @@
 
   // Put your answer below -------------------------
 
-  var callNtimes = function
-    // -----------------------------------------------
+  var callNtimes = function (callback) {
+    for (i = 1; i < 11; i++) {
+      callNtimes();
+    }
 
-    //////////////////////////////////////////////////
-    //////////////////////////////////////////////////
+  }
+  callNtimes();
+  // -----------------------------------------------
 
-    // 8. --------------------------------------------
+  //////////////////////////////////////////////////
+  //////////////////////////////////////////////////
 
-    // Below is the beginning code for an awesome game
-    // but already suffers a vulnerability that allows
-    // the savvy user to open the console and adjust
-    // the score to whatever they want. Refactor the
-    // code to protect from this.
+  // 8. --------------------------------------------
 
-    // HINT: "global scope"
+  // Below is the beginning code for an awesome game
+  // but already suffers a vulnerability that allows
+  // the savvy user to open the console and adjust
+  // the score to whatever they want. Refactor the
+  // code to protect from this.
 
-    let score = 0;
+  // HINT: "global scope"
+
+  let score = 0;
 
   var increaseScore = function () {
     score++;
@@ -298,7 +304,7 @@
   };
 
   // Put your answer below -------------------------
-
+  // 
 
 
   // -----------------------------------------------
